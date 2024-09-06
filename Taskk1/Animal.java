@@ -1,27 +1,23 @@
 package com.example.demo;
 
 public class Animal {
-    private String name;
-    private int age;
+    protected String name;
     private int maxRunDist;
     private int maxSwimDist;
     static int count = 0;
 
-    public Animal(String name, int age, int maxRunDist, int maxSwimDist) {
+    public Animal(String name, int maxRunDist, int maxSwimDist) {
         this.name = name;
-        this.age = age;
         this.maxRunDist = maxRunDist;
         this.maxSwimDist = maxSwimDist;
         count++;
     }
 
     public String getName() {
+
         return name;
     }
 
-    public int getAge() {
-        return age;
-    }
 
 
     public void run(int dist) {
