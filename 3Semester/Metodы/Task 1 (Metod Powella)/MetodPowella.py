@@ -3,16 +3,7 @@ import math
 import matplotlib.pyplot as plt
 
 def f(x):
-     return 0.5*x*x-math.sin(x) #вариант 6 интервал от 1 до 4
-    # return x-4*(x*(4-x))**0.5 # вариант 9 интервал от 0.2 до 3.5
-    #return 2 * x * x + 16 / x # вариант 1 интервал от 1 до 5
-    # return x * x * x - 12 * x + 3 # вариант 2 интервал от 0.5 до 4
-     #return 3 * x * x + 12 / x**3 - 5 # вариант 3 интервал от 0.5 до 2
-     #return x**4 - 32 * x + 50 # вариант 4 интервал от 1 до 4
-    #return x * (1 - x**2)**0.5 # вариант 5 интервал от -0.9 до 0
-    #return 2 * x**2 - math.exp(x) # вариант 7 интервал от -3 до 2
-     #return -1 * math.log(x) + 3 * x**2 # вариант 8 интервал от 0.05 до 2
-    # -1 * x * math.exp(-x) +x # вариант 10 интервал от -2 до 5
+     return 0.5*x*x-math.sin(x) 
 def search_min(a, b, E):
 
 
@@ -99,7 +90,7 @@ def search_min(a, b, E):
 ans, points = search_min(-1, 4, 0.01)
 print(f"\nОтвет: {ans}, f(x) = {f(ans)}")
 
-x_vals = np.linspace(0.5, 2, 100)
+x_vals = np.linspace(-1, 4, 100)
 y_vals = [f(x) for x in x_vals]
 
 x_points, y_points = zip(*points)
